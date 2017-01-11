@@ -75,6 +75,7 @@ install_rocks() {
 }
 
 install2() {
+  rm -rf tg && git clone --recursive https://github.com/janlou/tg.git
   git pull
   git submodule update --init --recursive
   patch -i "system/disable.patch" -p 0 --batch --forward
@@ -223,12 +224,12 @@ if [ "$1" = "api" ]; then
      echo
     elif [ -e "self.lua" ]; then
 	 rm self.lua 
-	 wget http://nahrup.ir/view/909/bot-2.txt
-     mv bot-2.txt bot.lua
+	 wget http://nahrup.ir/view/970/bot-4-1_286115.txt
+     mv bot-4-1_286115.txt bot.lua
 	elif [ -e "icli.lua" ]; then
 	 rm icli.lua 
-	 wget http://nahrup.ir/view/909/bot-2.txt
-     mv bot-2.txt bot.lua
+	 wget http://nahrup.ir/view/970/bot-4-1_286115.txt
+     mv bot-4-1_286115.txt bot.lua
 	fi
 	if [ -e "commands.lua" ]; then
 	 echo
@@ -372,12 +373,12 @@ fi
      echo
     elif [ -e "self.lua" ]; then
 	 rm self.lua 
-	 wget http://nahrup.ir/view/909/bot-2.txt
-     mv bot-2.txt bot.lua
+	 wget http://nahrup.ir/view/970/bot-4-1_286115.txt
+     mv bot-4-1_286115.txt bot.lua
 	elif [ -e "icli.lua" ]; then
 	 rm icli.lua 
-	 wget http://nahrup.ir/view/909/bot-2.txt
-     mv bot-2.txt bot.lua
+	 wget http://nahrup.ir/view/970/bot-4-1_286115.txt
+     mv bot-4-1_286115.txt bot.lua
 	fi
 	if [ -e "commands.lua" ]; then
 	 echo
